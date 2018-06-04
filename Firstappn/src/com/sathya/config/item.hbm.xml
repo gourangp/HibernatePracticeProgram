@@ -1,0 +1,17 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sathya.entity.Item" table="Item">
+		<id name="itemId" column="itemId">
+
+			<generator class="native">
+
+				<param name="sequence">s1</param>
+
+			</generator>
+		</id>
+		<property name="itemName" column="itemName" length="12"></property>
+		<property name="price" column="price"></property>
+	</class>
+</hibernate-mapping>
